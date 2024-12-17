@@ -1,0 +1,76 @@
+.ext-container {
+   background-color: white;
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+   height: 500px;
+   width: 700px;
+   position: fixed;
+   top: 2rem;
+   right: 2rem;
+   display: flex;
+   flex-direction: column;
+   font-family: cursive;
+   z-index: 100;
+}
+.ext-list {
+   overflow: auto;
+   font-size: 14px;
+   gap: 1rem;
+   padding: 2rem;
+   padding-left: 4rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.ext-main-heading {
+   font-size: 16px;
+   font-weight: bold;
+}
+.ext-header {
+   height: 50px;
+   width: 100%;
+   background-color: rgb(52, 53, 65);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 1rem;
+   padding-right: 1rem;
+}
+.ext-container ::marker {
+   color: rgba(0, 0, 0, 0.3) !important;
+}
+.ext-title {
+   margin-left: 2rem;
+   color: white;
+}
+
+.ext-close-btn {
+   cursor: pointer;
+}
+
+.ext-loader {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 60px;
+   aspect-ratio: 2;
+   --_g: no-repeat radial-gradient(circle closest-side, #000 90%, #0000);
+   background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+   background-size: calc(100% / 3) 50%;
+   animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+   20% {
+      background-position: 0% 0%, 50% 50%, 100% 50%;
+   }
+   40% {
+      background-position: 0% 100%, 50% 0%, 100% 50%;
+   }
+   60% {
+      background-position: 0% 50%, 50% 100%, 100% 0%;
+   }
+   80% {
+      background-position: 0% 50%, 50% 50%, 100% 100%;
+   }
+}

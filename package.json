@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@types/chrome": "^0.0.287",
+    "openai": "^4.73.1"
+  }
+}
